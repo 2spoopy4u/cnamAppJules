@@ -1,12 +1,9 @@
 name: Build and publish
 
 on:
-  workflow_dispatch: # Putting here is also fine!!
-  release:
-    types: [created]
   push:
     branches:
-      - main
+      - master
 
 env:
   REGISTRY: ghcr.io
